@@ -1,0 +1,10 @@
+$(SRCROOT)/Carthage/Build/iOS/Kingfisher.framework
+$(SRCROOT)/Carthage/Build/iOS/PromiseKit.framework
+$(SRCROOT)/Carthage/Build/iOS/RxAtomic.framework
+$(SRCROOT)/Carthage/Build/iOS/RxBlocking.framework
+$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework
+$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework
+$(SRCROOT)/Carthage/Build/iOS/RxTest.framework
+$(SRCROOT)/Carthage/Build/iOS/Swinject.framework
+$(SRCROOT)/Carthage/Build/iOS/SwinjectAutoregistration.framework
+$(SRCROOT)/Carthage/Build/iOS/SwinjectStoryboard.framework

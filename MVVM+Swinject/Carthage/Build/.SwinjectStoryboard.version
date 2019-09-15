@@ -1,0 +1,27 @@
+{
+  "Mac" : [
+    {
+      "name" : "SwinjectStoryboard",
+      "hash" : "ff5d3edbcc0fde8dd0defec88fe679df3d531b9c1b8a891f1cdc0a572477d41c",
+      "swiftToolchainVersion" : "5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
+    }
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+    {
+      "name" : "SwinjectStoryboard",
+      "hash" : "669fd7aa0fb440a2aad660271e894fc4252e013ebab884b49c2f5ef79011c6a1",
+      "swiftToolchainVersion" : "5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
+    }
+  ],
+  "commitish" : "2.2.0",
+  "iOS" : [
+    {
+      "name" : "SwinjectStoryboard",
+      "hash" : "6ccb8bcdb5ce7f9db72e0098ed0265dd3fe24cfc59b7a4fa1e271605dfa3aff0",
+      "swiftToolchainVersion" : "5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
+    }
+  ]
+}

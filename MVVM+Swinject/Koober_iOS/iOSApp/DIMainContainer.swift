@@ -24,17 +24,16 @@ public class DIMainContainer {
             return DISignedInContainer.get(parent: container)
         }
         
-        container.autoregister(OnboardingViewModel.self, initializer: OnboardingViewModel.init).inObjectScope(.container)
+        container.autoregister(OnboardingViewModel.self, initializer: OnboardingViewModel.init).inObjectScope(.weak)
         
         container.register(OnboardingViewController.self) { r in
-            
             return OnboardingViewController(viewModel: r.resolve(OnboardingViewModel.self)!, onboardingContainer: r.resolve(Container.self, name: "onboarding")! )
-        }
+        }.inObjectScope(.transient)
         
-        container.autoregister(SignedInViewModel.self, initializer: SignedInViewModel.init).inObjectScope(.container)
+        container.autoregister(SignedInViewModel.self, initializer: SignedInViewModel.init).inObjectScope(.weak)
         container.register(SignedInViewController.self) { (r : Resolver, userSession : UserSession) in
             return SignedInViewController(viewModel: r.resolve(SignedInViewModel.self)!, userSession: userSession, signedinContainer: r.resolve(Container.self, name: "signedin")!)
-        }
+        }.inObjectScope(.transient)
         
         return container
     }

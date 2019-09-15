@@ -57,7 +57,7 @@ public class SignedInViewController: NiblessViewController {
   init(viewModel: SignedInViewModel,
        userSession: UserSession,
        signedinContainer: Container) {
-    self.viewModel = viewModel
+    self.viewModel = viewModel //signedinContainer.resolve(SignedInViewModel.self)!
     self.userSession = userSession
     self.signedinContainer = signedinContainer
     self.profileViewController = signedinContainer.resolve(ProfileViewController.self, argument: userSession)!

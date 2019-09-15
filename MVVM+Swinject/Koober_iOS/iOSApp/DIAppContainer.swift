@@ -30,7 +30,7 @@ public class DIAppContainer {
         container.autoregister(UserSessionDataStore.self, initializer: KeychainUserSessionDataStore.init)
         #endif
         container.autoregister(UserSessionRepository.self, initializer: KooberUserSessionRepository.init)
-        container.autoregister(MainViewModel.self, initializer: MainViewModel.init)
+        container.autoregister(MainViewModel.self, initializer: MainViewModel.init).inObjectScope(.container)
         
         container.register(LaunchViewModel.self) { r in
             return LaunchViewModel(userSessionRepository: r.resolve(UserSessionRepository.self)!, notSignedInResponder: r.resolve(MainViewModel.self)!, signedInResponder: r.resolve(MainViewModel.self)!)

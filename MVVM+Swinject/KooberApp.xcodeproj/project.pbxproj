@@ -11,10 +11,6 @@
 		287665EC20864B8300564D47 /* KooberNewRideRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287665EB20864B8300564D47 /* KooberNewRideRepository.swift */; };
 		28B10BF620BDECE400122AF2 /* Koober_iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 28B10BF420BDECE400122AF2 /* Koober_iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		28B10BF920BDECE400122AF2 /* Koober_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28B10BF220BDECE300122AF2 /* Koober_iOS.framework */; };
-		28B10C2020BDEEE800122AF2 /* KooberAppDepedencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F47B1231FAD6CBF009B5587 /* KooberAppDepedencyContainer.swift */; };
-		28B10C2220BDEF2400122AF2 /* KooberOnboardingDependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC897861FAE55EE00B1A8B0 /* KooberOnboardingDependencyContainer.swift */; };
-		28B10C2420BDEF3400122AF2 /* KooberSignedInDependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F47B1261FAD6CBF009B5587 /* KooberSignedInDependencyContainer.swift */; };
-		28B10C2620BDEF4C00122AF2 /* KooberPickMeUpDependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDDC96D1FF4870F00CF43B3 /* KooberPickMeUpDependencyContainer.swift */; };
 		28B10C2820BDEF6400122AF2 /* KooberKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F8A89D81FAD67480096B294 /* KooberKit.framework */; };
 		28B10C2920BDEF6400122AF2 /* KooberUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F8A89C61FAD67360096B294 /* KooberUIKit.framework */; };
 		28B10C2A20BDEFB600122AF2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F47B1541FAD6CC0009B5587 /* MainViewController.swift */; };
@@ -483,8 +479,6 @@
 		9F47B0D01FAD6C7E009B5587 /* RemoteImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
 		9F47B0D21FAD6C7E009B5587 /* UserProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		9F47B0D31FAD6C7E009B5587 /* UserSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSession.swift; sourceTree = "<group>"; };
-		9F47B1231FAD6CBF009B5587 /* KooberAppDepedencyContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KooberAppDepedencyContainer.swift; sourceTree = "<group>"; };
-		9F47B1261FAD6CBF009B5587 /* KooberSignedInDependencyContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KooberSignedInDependencyContainer.swift; sourceTree = "<group>"; };
 		9F47B12D1FAD6CBF009B5587 /* ImageCacheKingfisher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCacheKingfisher.swift; sourceTree = "<group>"; };
 		9F47B12E1FAD6CBF009B5587 /* ImageCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		9F47B12F1FAD6CBF009B5587 /* NiblessView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NiblessView.swift; sourceTree = "<group>"; };
@@ -566,8 +560,6 @@
 		9F96BDF0209E69B300F13F88 /* RideOptionDataStoreDiskUserPrefs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RideOptionDataStoreDiskUserPrefs.swift; sourceTree = "<group>"; };
 		9F98007320B4C59600BF2221 /* NiblessNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiblessNavigationController.swift; sourceTree = "<group>"; };
 		9FBB2EA41FAE450E0086363B /* Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifiable.swift; sourceTree = "<group>"; };
-		9FC897861FAE55EE00B1A8B0 /* KooberOnboardingDependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KooberOnboardingDependencyContainer.swift; sourceTree = "<group>"; };
-		9FDDC96D1FF4870F00CF43B3 /* KooberPickMeUpDependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KooberPickMeUpDependencyContainer.swift; sourceTree = "<group>"; };
 		9FE690DD20B4EACE00F1E124 /* NavigationAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationAction.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -641,7 +633,6 @@
 		28B10C1C20BDEEBF00122AF2 /* iOSApp */ = {
 			isa = PBXGroup;
 			children = (
-				9F47B1231FAD6CBF009B5587 /* KooberAppDepedencyContainer.swift */,
 				9F47B1541FAD6CC0009B5587 /* MainViewController.swift */,
 				9F47B1531FAD6CC0009B5587 /* LaunchViewController.swift */,
 				9F47B1521FAD6CC0009B5587 /* LaunchRootView.swift */,
@@ -656,7 +647,6 @@
 		28B10C1D20BDEEC800122AF2 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
-				9FC897861FAE55EE00B1A8B0 /* KooberOnboardingDependencyContainer.swift */,
 				9F47B1561FAD6CC0009B5587 /* OnboardingViewController.swift */,
 				9F47B15F1FAD6CC0009B5587 /* Welcome */,
 				9F47B15C1FAD6CC0009B5587 /* SignUp */,
@@ -669,7 +659,6 @@
 		28B10C1E20BDEED000122AF2 /* SignedIn */ = {
 			isa = PBXGroup;
 			children = (
-				9F47B1261FAD6CBF009B5587 /* KooberSignedInDependencyContainer.swift */,
 				9F47B16F1FAD6CC0009B5587 /* SignedInViewController.swift */,
 				9F47B16E1FAD6CC0009B5587 /* SignedInRootView.swift */,
 				9F4CA1811FE6DE6300864536 /* GettingUsersLocation */,
@@ -684,7 +673,6 @@
 		28B10C2520BDEF3B00122AF2 /* PickMeUp */ = {
 			isa = PBXGroup;
 			children = (
-				9FDDC96D1FF4870F00CF43B3 /* KooberPickMeUpDependencyContainer.swift */,
 				9F47B1691FAD6CC0009B5587 /* PickMeUpViewController.swift */,
 				9F41F1761FE78DE300C7EABF /* PickMeUpUserInterface.swift */,
 				9F47B1681FAD6CC0009B5587 /* PickMeUpRootView.swift */,
@@ -1791,17 +1779,14 @@
 				28B10C2F20BDEFED00122AF2 /* SignedInRootView.swift in Sources */,
 				28B10C3120BDF00B00122AF2 /* PickMeUpViewController.swift in Sources */,
 				28B10C4020BDF0BB00122AF2 /* PickMeUpMapViewController.swift in Sources */,
-				28B10C2020BDEEE800122AF2 /* KooberAppDepedencyContainer.swift in Sources */,
 				8438AD30232D28F2008377F8 /* DIAppContainer.swift in Sources */,
 				28B10C4320BDF0BF00122AF2 /* MapViewModel.swift in Sources */,
 				28B10C3220BDF00B00122AF2 /* PickMeUpUserInterface.swift in Sources */,
-				28B10C2620BDEF4C00122AF2 /* KooberPickMeUpDependencyContainer.swift in Sources */,
 				28B10C4420BDF0BF00122AF2 /* MapAnnotation.swift in Sources */,
 				28B10C3320BDF08F00122AF2 /* WelcomeViewController.swift in Sources */,
 				28B10C4120BDF0BB00122AF2 /* PickMeUpMapRootView.swift in Sources */,
 				28B10C3420BDF09500122AF2 /* WelcomeRootView.swift in Sources */,
 				28B10C3E20BDF0B100122AF2 /* ProfileContentViewController.swift in Sources */,
-				28B10C2220BDEF2400122AF2 /* KooberOnboardingDependencyContainer.swift in Sources */,
 				28B10C4C20BDF0C900122AF2 /* RideOptionSegmentedControl.swift in Sources */,
 				28B10C3020BDF00B00122AF2 /* PickMeUpRootView.swift in Sources */,
 				28B10C3F20BDF0B100122AF2 /* ProfileContentRootView.swift in Sources */,
@@ -1818,7 +1803,6 @@
 				28B10C4620BDF0BF00122AF2 /* MapAnnotation+MapKit.swift in Sources */,
 				28B10C2A20BDEFB600122AF2 /* MainViewController.swift in Sources */,
 				28B10C4920BDF0C500122AF2 /* DropoffLocationPickerContentViewController.swift in Sources */,
-				28B10C2420BDEF3400122AF2 /* KooberSignedInDependencyContainer.swift in Sources */,
 				28B10C4B20BDF0C900122AF2 /* RideOptionPickerViewController.swift in Sources */,
 				28B10C4D20BDF0CE00122AF2 /* RideOptionButton.swift in Sources */,
 				28B10C4820BDF0C500122AF2 /* DropoffLocationPickerViewController.swift in Sources */,

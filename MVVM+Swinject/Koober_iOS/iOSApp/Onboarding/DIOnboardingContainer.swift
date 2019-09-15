@@ -17,21 +17,29 @@ public class DIOnboardingContainer {
         
         let container = Container(parent: parent)
         
-        container.autoregister(GoToSignUpNavigator.self, initializer: OnboardingViewModel.init)
-        container.autoregister(GoToSignInNavigator.self, initializer: OnboardingViewModel.init)
+        container.register(GoToSignUpNavigator.self) { r in
+            return r.resolve(OnboardingViewModel.self)!
+        }
+        container.register(GoToSignInNavigator.self) { r in
+            return r.resolve(OnboardingViewModel.self)!
+        }
+        
         container.autoregister(WelcomeViewModel.self, initializer: WelcomeViewModel.init).inObjectScope(.transient)
         container.autoregister(WelcomeViewController.self, initializer: WelcomeViewController.init).inObjectScope(.weak)
         
-        container.autoregister(SignedInResponder.self, initializer: MainViewModel.init)
+        container.register(SignedInResponder.self) { r in
+            return r.resolve(MainViewModel.self)!
+        }
+        
         container.register(SignInViewModel.self) { r in
             return SignInViewModel(userSessionRepository: r.resolve(UserSessionRepository.self)!, signedInResponder: r.resolve(SignedInResponder.self)!)
         }.inObjectScope(.transient)
-        container.autoregister(SignUpViewController.self, initializer: SignUpViewController.init)
+        container.autoregister(SignInViewController.self, initializer: SignInViewController.init).inObjectScope(.transient)
         
         container.register(SignUpViewModel.self) { r in
             return SignUpViewModel(userSessionRepository: r.resolve(UserSessionRepository.self)!, signedInResponder: r.resolve(SignedInResponder.self)!)
         }.inObjectScope(.transient)
-        container.autoregister(SignInViewController.self, initializer: SignInViewController.init)
+        container.autoregister(SignUpViewController.self, initializer: SignUpViewController.init)
         
         return container 
     }
